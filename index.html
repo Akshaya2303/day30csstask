@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day30css task</title>
+    <style>
+        @keyframes sample {
+              from{
+                background-color: blue;
+                transform: scale(1,1);
+                border-radius: 30%;
+                transform: translate(10px,10px);
+
+            }
+            to{
+                background-color: orange;
+                transform:( 2,2);
+                border-radius: 60%;
+                transform: translate(40px,40px);
+
+            }    
+        }
+        .cd{
+            margin-top: 40px;
+            background-color: red;
+            height: 20px;
+            width:160px;
+            animation-name: sample;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes box {
+            from{
+                background-color:red;
+                transform:( 42,42);
+                border-radius: 120%;
+                transform: translate(160px,160px);
+               
+
+            }
+            to{
+                  background-color: green;
+                transform: scale(122,122);
+                border-radius: 70%;
+                transform: translate(50px,50px); 
+
+            }    
+        }
+        .d{
+            margin-top: 180px;
+            background-color: rgb(166, 0, 255);
+            height: 120px;
+            width:190px;
+            animation-name: box;
+            animation-duration: 1s;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+        .line{
+            border: 5px solid black;
+            height:100%;
+            margin-right: 280px;
+            margin-top: 280px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cd">
+        <div class="d"></div>
+    </div>
+    <p class="line"></p>
+    
+</body>
+</html>
